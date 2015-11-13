@@ -1,2 +1,3 @@
-# casserverpac4j
-CAS server for pac4j demos
+# Online CAS server for pac4j demos
+
+Running on Heroku at: https://casserverpac4j.herokuapp.com
