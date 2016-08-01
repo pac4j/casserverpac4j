@@ -1,0 +1,1 @@
+web: java -Dcas.port=$PORT -jar  target/cas.war
