@@ -1,0 +1,6 @@
+{
+  "name": "casserverpac4j",
+  "repository": "https://github.com/pac4j/casserverpac4j",
+  "image": "heroku/java"
+}
+
