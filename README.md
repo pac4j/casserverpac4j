@@ -1,3 +1,5 @@
-# Online CAS server for pac4j demos
+# CAS server for pac4j demos
 
-Running on Heroku at: https://casserverpac4j.herokuapp.com
+Running online at Heroku: `https://casserverpac4j.herokuapp.com`
+
+Running locally on `http://localhost:8888/cas` via: `mvn clean package; java -jar target/cas.war`
