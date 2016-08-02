@@ -5,8 +5,9 @@
   "id" : 1,
   "description" : "HTTP services",
   "proxyPolicy" : {
-    "@class" : "org.apereo.cas.services.RefuseRegisteredServiceProxyPolicy"
-  },
+    "@class" : "org.apereo.cas.services.RegexMatchingRegisteredServiceProxyPolicy",
+    "pattern" : "^https?://.*"
+  }
   "evaluationOrder" : 0,
   "usernameAttributeProvider" : {
     "@class" : "org.apereo.cas.services.DefaultRegisteredServiceUsernameProvider"
