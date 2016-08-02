@@ -42,11 +42,11 @@
 			<artifactId>cas-server-support-oauth</artifactId>
 			<version>${cas.version}</version>
 		</dependency>
-		<!--dependency>
+		<dependency>
 			<groupId>org.apereo.cas</groupId>
 			<artifactId>cas-server-support-oidc</artifactId>
 			<version>${cas.version}</version>
-		</dependency-->
+		</dependency>
 	</dependencies>
 
 	<build>
