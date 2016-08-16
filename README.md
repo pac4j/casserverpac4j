@@ -2,7 +2,7 @@
 
 Running online at Heroku: `https://casserverpac4j.herokuapp.com/login`
 
-Running locally on `http://localhost:8888/cas` via: `mvn clean package; java -Dcas.port=8888 -Dcas.path=/cas -jar target/cas.war`
+Running locally on `http://localhost:8888/cas` via: `mvn clean package; java -Dcas.port=8888 -Dcas.path=/cas -Dcas.server.prefix=http://localhost:8888/cas -jar target/cas.war`
 
 ---
 

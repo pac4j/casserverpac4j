@@ -66,10 +66,7 @@
 					<recompressZippedFiles>false</recompressZippedFiles>
 					<archive>
 						<compress>false</compress>
-                        <manifestEntries>
-                            <Start-Class>org.apereo.cas.web.CasWebApplication</Start-Class>
-                            <Main-Class>org.springframework.boot.loader.WarLauncher</Main-Class>
-                        </manifestEntries>
+						<manifestFile>${project.build.directory}/war/work/org.apereo.cas/cas-server-webapp/META-INF/MANIFEST.MF</manifestFile>
 					</archive>
 					<overlays>
 						<overlay>
