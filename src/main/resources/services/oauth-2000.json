@@ -5,5 +5,9 @@
   "bypassApprovalPrompt": false,
   "serviceId" : "^https?://.*",
   "name" : "OAuth",
-  "id" : 2000
+  "id" : 2000,
+  "evaluationOrder": 2000,
+  "attributeReleasePolicy" : {
+    "@class" : "org.apereo.cas.services.ReturnAllAttributeReleasePolicy"
+  }
 }

@@ -1,14 +1,12 @@
 {
   "@class" : "org.apereo.cas.services.RegexRegisteredService",
-  "serviceId" : "^https?://.*",
-  "name" : "default",
-  "id" : 1,
-  "description" : "HTTP services",
+  "serviceId" : "^http://token$",
+  "name" : "token",
+  "id" : 3000,
   "proxyPolicy" : {
-    "@class" : "org.apereo.cas.services.RegexMatchingRegisteredServiceProxyPolicy",
-    "pattern" : "^https?://.*"
-  }
-  "evaluationOrder" : 0,
+    "@class" : "org.apereo.cas.services.RefuseRegisteredServiceProxyPolicy"
+  },
+  "evaluationOrder" : 3000,
   "usernameAttributeProvider" : {
     "@class" : "org.apereo.cas.services.DefaultRegisteredServiceUsernameProvider"
   },
@@ -25,5 +23,12 @@
     "@class" : "org.apereo.cas.services.DefaultRegisteredServiceAccessStrategy",
     "enabled" : true,
     "ssoEnabled" : true
+  },
+  "properties":{
+    "@class":"java.util.HashMap",
+    "jwtSigningSecret":{
+      "@class":"org.apereo.cas.services.DefaultRegisteredServiceProperty",
+      "values":["java.util.HashSet", ["%U3S6=#;<5i-*X1>Q<FXI(ys@cBpOt]vA9cY$H<i@YFUse j-,kwq9W{f]U|(4SF"]]
+    }
   }
 }
