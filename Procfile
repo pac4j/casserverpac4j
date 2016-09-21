@@ -1,1 +1,1 @@
-web: java -Dcas.port=$PORT $JAVA_OPTS -jar ./target/cas.war
+web: java -Xmx256m -Dcas.port=$PORT -jar ./target/cas.war
