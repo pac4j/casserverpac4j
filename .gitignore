@@ -1,7 +1,0 @@
-.idea
-*.iml
-target
-overlays
-*.log
-build/
-.DS_Store
