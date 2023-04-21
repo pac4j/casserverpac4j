@@ -2,8 +2,4 @@
 
 Running online at Heroku: `https://casserverpac4j.herokuapp.com/login`
 
-Running locally on `http://localhost:8888/cas` via: `mvn clean package; java -Xmx256m -Dcas.port=8888 -Dcas.path=/cas -Dcas.server.prefix=http://localhost:8888/cas -jar target/cas.war`
-
----
-
-`keytool -genkeypair -alias pac4j-demo -keypass pac4j-demo-passwd -keystore keystore.jks -storepass pac4j-demo-passwd -keyalg RSA -keysize 2048 -validity 3650`
+Running locally on `http://localhost:8080` via: `mvn clean package; java -Xmx256m -Dapp.domain=http://localhost:8080 -Dapp.port=8080 -jar target/cas.war`

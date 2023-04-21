@@ -1,0 +1,20 @@
+cas.authn.accept.users:
+
+cas.tgc.secure: false
+cas.tgc.same-site-policy: Lax
+
+cas.tgc.crypto.enabled: false
+cas.webflow.crypto.enabled: false
+
+cas.server.name: ${app.domain}
+cas.server.prefix: ${cas.server.name}
+cas.host.name: caspac4j
+
+cas.service-registry.json.location: classpath:/services
+
+server.port: ${app.port}
+server.servlet.context-path: /
+server.ssl.enabled: false
+cas.server.tomcat.httpProxy.enabled: false
+cas.server.tomcat.http:
+  - enabled: false
