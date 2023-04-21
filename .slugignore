@@ -1,1 +1,4 @@
 target/cas.war.original
+target/cas
+target/classes
+target/war
