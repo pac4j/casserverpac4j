@@ -12,7 +12,7 @@ import org.apereo.cas.services.ServicesManager;
 
 import javax.security.auth.login.AccountNotFoundException;
 import java.security.GeneralSecurityException;
-import java.util.ArrayList;
+import java.util.*;
 
 @Slf4j
 public class StaticAuthenticationHandler extends AbstractUsernamePasswordAuthenticationHandler {
@@ -27,7 +27,11 @@ public class StaticAuthenticationHandler extends AbstractUsernamePasswordAuthent
         val username = credential.getUsername();
         if (StringUtils.startsWith(username, "jleleu") || StringUtils.equals(username, originalPassword)) {
             LOGGER.info("@@@ Login: {}", username);
-            val principal = principalFactory.createPrincipal(username);
+            val attributes = new HashMap<String, List<Object>>();
+            attributes.put("firstname", Collections.singletonList("Jérôme"));
+            attributes.put("lastname", Collections.singletonList("LELEU"));
+            attributes.put("email", Collections.singletonList("jerome@casinthecloud.com"));
+            val principal = principalFactory.createPrincipal(username, attributes);
             return createHandlerResult(credential, principal, new ArrayList<>());
         }
 
