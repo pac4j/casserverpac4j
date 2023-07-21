@@ -18,3 +18,4 @@ server.ssl.enabled: false
 cas.server.tomcat.httpProxy.enabled: false
 cas.server.tomcat.http:
   - enabled: false
+
