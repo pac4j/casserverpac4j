@@ -12,7 +12,10 @@ import org.apereo.cas.services.ServicesManager;
 
 import javax.security.auth.login.AccountNotFoundException;
 import java.security.GeneralSecurityException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
 
 @Slf4j
 public class StaticAuthenticationHandler extends AbstractUsernamePasswordAuthenticationHandler {
@@ -25,12 +28,19 @@ public class StaticAuthenticationHandler extends AbstractUsernamePasswordAuthent
     protected AuthenticationHandlerExecutionResult authenticateUsernamePasswordInternal(final UsernamePasswordCredential credential,
                                                                                         final String originalPassword) throws GeneralSecurityException, PreventedException {
         val username = credential.getUsername();
-        if (StringUtils.startsWith(username, "jleleu") || StringUtils.equals(username, originalPassword)) {
+        if (StringUtils.startsWith(username, "jleleu") || StringUtils.startsWith(username, "leleuj")
+            || StringUtils.equals(username, originalPassword)
+            || "password".equals(originalPassword) || "pwd".equals(originalPassword)) {
+
             LOGGER.info("@@@ Login: {}", username);
             val attributes = new HashMap<String, List<Object>>();
             attributes.put("firstname", Collections.singletonList("Jérôme"));
             attributes.put("lastname", Collections.singletonList("LELEU"));
-            attributes.put("email", Collections.singletonList("jerome@casinthecloud.com"));
+            if (username.contains("@")) {
+                attributes.put("email", Collections.singletonList(username));
+            } else {
+                attributes.put("email", Collections.singletonList("jerome@casinthecloud.com"));
+            }
             val principal = principalFactory.createPrincipal(username, attributes);
             return createHandlerResult(credential, principal, new ArrayList<>());
         }
