@@ -1,7 +1,7 @@
 {
   "@class" : "org.apereo.cas.services.CasRegisteredService",
   "serviceId" : "^https?://.*",
-  "name" : "any app",
+  "name" : "any CAS app",
   "id" : 1,
   "attributeReleasePolicy" : {
     "@class" : "org.apereo.cas.services.ReturnAllAttributeReleasePolicy"

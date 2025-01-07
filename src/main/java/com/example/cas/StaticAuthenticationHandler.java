@@ -4,14 +4,12 @@ import lombok.extern.slf4j.Slf4j;
 import lombok.val;
 import org.apache.commons.lang3.StringUtils;
 import org.apereo.cas.authentication.AuthenticationHandlerExecutionResult;
-import org.apereo.cas.authentication.PreventedException;
 import org.apereo.cas.authentication.credential.UsernamePasswordCredential;
 import org.apereo.cas.authentication.handler.support.AbstractUsernamePasswordAuthenticationHandler;
 import org.apereo.cas.authentication.principal.PrincipalFactory;
 import org.apereo.cas.services.ServicesManager;
 
 import javax.security.auth.login.AccountNotFoundException;
-import java.security.GeneralSecurityException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -26,7 +24,7 @@ public class StaticAuthenticationHandler extends AbstractUsernamePasswordAuthent
 
     @Override
     protected AuthenticationHandlerExecutionResult authenticateUsernamePasswordInternal(final UsernamePasswordCredential credential,
-                                                                                        final String originalPassword) throws GeneralSecurityException, PreventedException {
+                                                                                        final String originalPassword) throws Throwable {
         val username = credential.getUsername();
         if (StringUtils.startsWith(username, "jleleu") || StringUtils.startsWith(username, "leleuj")
             || StringUtils.equals(username, originalPassword)
