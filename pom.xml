@@ -21,7 +21,7 @@
     </repositories>
 
 	<properties>
-		<cas.version>6.6.9</cas.version>
+		<cas.version>6.6.15.2</cas.version>
 		<java.version>11</java.version>
 	</properties>
 
@@ -60,7 +60,6 @@
 				<artifactId>maven-war-plugin</artifactId>
 				<version>3.3.1</version>
 				<configuration>
-					<warName>cas</warName>
 					<failOnMissingWebXml>false</failOnMissingWebXml>
 					<recompressZippedFiles>false</recompressZippedFiles>
 					<archive>
