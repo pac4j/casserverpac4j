@@ -1,0 +1,7 @@
+{
+  "@class" : "org.apereo.cas.support.saml.services.SamlRegisteredService",
+  "serviceId" : "http://cas-server:8080.*",
+  "name" : "A SAML CAS server SP (cas-server:8080)",
+  "id" : 5,
+  "metadataLocation" : "./samlsp/sp-metadata-8080-casserver.xml"
+}
