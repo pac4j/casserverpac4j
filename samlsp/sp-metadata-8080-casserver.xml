@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_515cb1b876e04a1885e18c6fc31789647c3ebd0" entityID="http://localhost:8080/cas/login?client_name=SAML2Clientcasserver" validUntil="2045-01-03T07:56:56.024Z">
+<?xml version="1.0" encoding="UTF-8"?><md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_5021a7d7dcbb414dbaa8883b5c685d3ea8e3f37" entityID="http://cas-server:8080/cas/login?client_name=SAML2Clientcasserver" validUntil="2045-01-03T08:01:49.846Z">
     <md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
         <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
         <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
@@ -19,7 +19,7 @@
     </md:Extensions>
     <md:SPSSODescriptor AuthnRequestsSigned="false" WantAssertionsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
         <md:Extensions xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init">
-            <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="http://localhost:8080/cas/login?client_name=SAML2Clientcasserver"/>
+            <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="http://cas-server:8080/cas/login?client_name=SAML2Clientcasserver"/>
         </md:Extensions>
         <md:KeyDescriptor use="signing">
             <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
@@ -65,14 +65,14 @@ CtUfZL67og==</ds:X509Certificate>
                 </ds:X509Data>
             </ds:KeyInfo>
         </md:KeyDescriptor>
-        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://localhost:8080/cas/login?client_name=SAML2Clientcasserver"/>
-        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="http://localhost:8080/cas/login?client_name=SAML2Clientcasserver"/>
-        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="http://localhost:8080/cas/login?client_name=SAML2Clientcasserver"/>
-        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="http://localhost:8080/cas/login?client_name=SAML2Clientcasserver"/>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://cas-server:8080/cas/login?client_name=SAML2Clientcasserver"/>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="http://cas-server:8080/cas/login?client_name=SAML2Clientcasserver"/>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="http://cas-server:8080/cas/login?client_name=SAML2Clientcasserver"/>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="http://cas-server:8080/cas/login?client_name=SAML2Clientcasserver"/>
         <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
         <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
         <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</md:NameIDFormat>
         <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat>
-        <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://localhost:8080/cas/login?client_name=SAML2Clientcasserver" index="0"/>
+        <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://cas-server:8080/cas/login?client_name=SAML2Clientcasserver" index="0"/>
     </md:SPSSODescriptor>
 </md:EntityDescriptor>
