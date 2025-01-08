@@ -24,3 +24,6 @@ cas.authn.oidc.jwks.file-system.jwks-file: classpath:keystore.jwks
 
 cas.authn.oauth.session-replication.cookie.crypto.signing.key: swjgPFGwYOHh6HJUHFsQ4VtxSZL9lY7ABu0FWDDEDRUMdta0EDi4uUqljTJgUQ7UTC7IMfiWGZVseMERPsl4CQ
 cas.authn.oauth.session-replication.cookie.crypto.encryption.key: ybPgaewBWROr1Hsn9vRJdUaD2jv-Kc6kz8mrJP4aDNddTpMn-qIGobl_PeJVgoxOYpC7V31HlX-O61Wglwdz7Q
+
+cas.authn.saml-idp.core.entity-id: ${cas.server.name}/idp
+cas.authn.saml-idp.metadata.file-system.location: file:${saml.dir}

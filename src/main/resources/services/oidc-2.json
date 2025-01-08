@@ -3,7 +3,7 @@
   "clientId": "myclient",
   "clientSecret": "mysecret",
   "serviceId" : "^https?://.*",
-  "name": "any OIDC app",
+  "name": "any OIDC RP",
   "id": 2,
   "bypassApprovalPrompt": true,
   "scopes" : [ "java.util.HashSet",

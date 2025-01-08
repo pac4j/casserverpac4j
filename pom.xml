@@ -53,6 +53,13 @@
 			<version>${cas.version}</version>
 		</dependency>
 
+		<!-- SAML -->
+		<dependency>
+			<groupId>org.apereo.cas</groupId>
+			<artifactId>cas-server-support-saml-idp</artifactId>
+			<version>${cas.version}</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>

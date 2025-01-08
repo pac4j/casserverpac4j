@@ -1,0 +1,7 @@
+{
+  "@class" : "org.apereo.cas.support.saml.services.SamlRegisteredService",
+  "serviceId" : "http://localhost:8081.*",
+  "name" : "A SAML client SP",
+  "id" : 3,
+  "metadataLocation" : "./sp-metadata-8081.xml"
+}
