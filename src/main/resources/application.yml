@@ -18,3 +18,9 @@ server.ssl.enabled: false
 cas.server.tomcat.httpProxy.enabled: false
 cas.server.tomcat.http:
   - enabled: false
+
+cas.authn.oidc.core.issuer:  ${cas.server.name}/oidc
+cas.authn.oidc.jwks.file-system.jwks-file: classpath:keystore.jwks
+
+cas.authn.oauth.session-replication.cookie.crypto.signing.key: swjgPFGwYOHh6HJUHFsQ4VtxSZL9lY7ABu0FWDDEDRUMdta0EDi4uUqljTJgUQ7UTC7IMfiWGZVseMERPsl4CQ
+cas.authn.oauth.session-replication.cookie.crypto.encryption.key: ybPgaewBWROr1Hsn9vRJdUaD2jv-Kc6kz8mrJP4aDNddTpMn-qIGobl_PeJVgoxOYpC7V31HlX-O61Wglwdz7Q
