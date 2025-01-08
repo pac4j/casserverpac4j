@@ -60,6 +60,13 @@
 			<version>${cas.version}</version>
 		</dependency>
 
+		<!-- allow /public -->
+		<dependency>
+			<groupId>org.apereo.cas</groupId>
+			<artifactId>cas-server-core-web-api</artifactId>
+			<version>${cas.version}</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
