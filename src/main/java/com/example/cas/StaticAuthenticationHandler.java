@@ -34,6 +34,9 @@ public class StaticAuthenticationHandler extends AbstractUsernamePasswordAuthent
             val attributes = new HashMap<String, List<Object>>();
             attributes.put("firstname", Collections.singletonList("Jérôme"));
             attributes.put("lastname", Collections.singletonList("LELEU"));
+            if (username.startsWith("sub")) {
+                attributes.put("sub", Collections.singletonList(username.substring(3)));
+            }
             if (username.contains("@")) {
                 attributes.put("email", Collections.singletonList(username));
             } else {

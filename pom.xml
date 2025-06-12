@@ -21,7 +21,7 @@
     </repositories>
 
 	<properties>
-		<cas.version>7.1.5</cas.version>
+		<cas.version>7.1.6</cas.version>
 		<java.version>21</java.version>
 	</properties>
 
