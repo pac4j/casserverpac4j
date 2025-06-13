@@ -42,6 +42,15 @@ public class StaticAuthenticationHandler extends AbstractUsernamePasswordAuthent
             } else {
                 attributes.put("email", Collections.singletonList("jerome@casinthecloud.com"));
             }
+            if ("subguillaume".equals(username)) {
+                attributes.put("family_name", Collections.singletonList("dupond"));
+                attributes.put("given_name", Collections.singletonList("guillaume"));
+                attributes.put("birthdate", Collections.singletonList("1979-06-08"));
+                attributes.put("gender", Collections.singletonList("male"));
+                attributes.put("birthplace", Collections.singletonList("34172"));
+                attributes.put("birthcountry", Collections.singletonList("99139"));
+                attributes.put("email", Collections.singletonList("gdupond@test.org"));
+            }
             val principal = principalFactory.createPrincipal(username, attributes);
             return createHandlerResult(credential, principal, new ArrayList<>());
         }
